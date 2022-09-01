@@ -1,0 +1,27 @@
+{% if site.repository and page.issue_id %}
+
+{% assign issues_repo = site.repository %}
+{% assign issue_id = page.issue_id %}
+
+<script>
+  'use strict';
+
+  (function() {
+    var commentContainer = document.querySelector('#utterances-comments');
+
+    if (!commentContainer) {
+      return;
+    }
+
+    var script = document.createElement('script');
+    script.setAttribute('src', 'https://utteranc.es/client.js');
+    script.setAttribute('repo', '{{ issues_repo }}');
+    script.setAttribute('issue-number', '{{ issue_id }}');
+    script.setAttribute('theme', 'github-light');
+    script.setAttribute('crossorigin', 'anonymous');
+
+    commentContainer.appendChild(script);
+  })();
+</script>
+
+{% endif %}

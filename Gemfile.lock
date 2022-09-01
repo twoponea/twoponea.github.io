@@ -256,9 +256,9 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  github-pages (~> 227)
-  jekyll
-  webrick (~> 1.7)
+  github-pages
+  jekyll-include-cache
+  webrick
 
 BUNDLED WITH
    2.3.21

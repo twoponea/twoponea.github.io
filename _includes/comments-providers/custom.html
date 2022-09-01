@@ -1,0 +1,16 @@
+<section id="custom-comments">
+  <h4 class="page__comments-title">Comments</h4>
+  {% if site.repository and page.issue_id %}
+  <section id="utterances-comments"></section>
+
+  {% assign issues_repo = site.repository %}
+  {% assign issue_id = page.issue_id %}
+
+  <a class="btn btn--block btn--primary" href="https://github.com/{{ issues_repo }}/issues/{{ issue_id }}#new_comment_field">Or you can write comments directly on GitHub
+    <i class="fab fa-fw fa-github" aria-hidden="true"></i>
+  </a>
+  {% else %}
+  <p class="notice--primary">Sorry, you can't currently comment on this post.</p>
+  {% endif %}
+</section>
+

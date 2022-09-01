@@ -79,7 +79,7 @@ markdown: kramdown
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 #theme: minimal-mistakes-jekyll
 
-minimal_mistakes_skin: "dirt"
+minimal_mistakes_skin: "air"
 plugins:
   - jekyll-feed
   - jekyll-include-cache
